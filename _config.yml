@@ -177,14 +177,16 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/TishaQin || fab fa-github
   E-Mail: mailto:tishaqin@gmail.com || fa fa-envelope
+  GitHub: https://github.com/TishaQin || fab fa-github
+  CSDN: https://blog.csdn.net/weixin_43623871 || fab fa-cuttlefish
+  微信公众号:  https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkwODY2OTc2MQ== || fab fa-weixin
+  小红书: https://www.xiaohongshu.com/user/profile/61239234000000000101c176 || fab fa-ravelry
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
-  CSDN: https://blog.csdn.net/weixin_43623871 || fab fa-stack-overflow
-  #YouTube: https://youtube.com/yourname || fab fa-youtube
+  #YouTube: https://youtube.com/yourname || fab fa-youtubeheart
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
 
@@ -224,7 +226,6 @@ chat:
   #service: tidio
   icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
   text: Chat # Button text, change it as you wish.
-
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -354,19 +355,19 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: night
+  highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
     enable: true
     # Show text copy result.
     show_result: true
     # Available values: default | flat | mac
-    style: flat
+    style: mac
 
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: true
+  sidebar: false
   # Scroll percent label in b2t button.
   scrollpercent: true
 
@@ -820,7 +821,7 @@ pdf:
 
 # Mermaid tag
 mermaid:
-  enable: false
+  enable: true
   # Available themes: default | dark | forest | neutral
   theme: forest
 
