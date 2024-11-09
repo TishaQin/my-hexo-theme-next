@@ -114,10 +114,11 @@ darkmode: false
 # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
-  home: /archives/ || fa fa-archive
-  about: /about/ || fa fa-user
+  # home: /archives/ || fa fa-home
+  home: /archives/ || fa fa-home
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
+  about: /about/ || fa fa-user
   # archives: /archives/ || fa fa-archive
   # schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -126,7 +127,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -178,7 +179,7 @@ social:
   GitHub: https://github.com/TishaQin || fab fa-github
   CSDN: https://blog.csdn.net/weixin_43623871 || fab fa-cuttlefish
   微信公众号: https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkwODY2OTc2MQ== || fab fa-weixin
-  小红书: https://www.xiaohongshu.com/user/profile/61239234000000000101c176 || fab fa-ravelry
+  # 小红书: https://www.xiaohongshu.com/user/profile/61239234000000000101c176 || fab fa-ravelry
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -249,7 +250,7 @@ post_meta:
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
   separated_meta: true
-  item_text_post: false
+  item_text_post: true
   item_text_total: true
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
@@ -362,7 +363,7 @@ codeblock:
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: false
+  sidebar: true
   # Scroll percent label in b2t button.
   scrollpercent: true
 
@@ -376,7 +377,7 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
@@ -602,17 +603,17 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
-  notify: false # Mail notifier
-  verify: false # Verification code
+  enable: true
+  appid: Ya3zOA5Mu8o4wbWCkMJooFOx-gzGzoHsz # Your leancloud application appid
+  appkey: qp2hI1mmbcy43clW5ONpT3Z8 # Your leancloud application appkey
+  notify: true # Mail notifier
+  verify: true # Verification code
   placeholder: Just go go # Comment box placeholder
-  avatar: mm # Gravatar style
+  avatar: monsterid # Gravatar style
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
   language: zh-CN # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
+  visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
@@ -689,11 +690,11 @@ cnzz_siteid:
 # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
 # Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
-  enable: false
-  app_id: # <your app id>
-  app_key: # <your app key>
+  enable: true
+  app_id: Ya3zOA5Mu8o4wbWCkMJooFOx-gzGzoHsz # <your app id>
+  app_key: qp2hI1mmbcy43clW5ONpT3Z8 # <your app key>
   # Required for apps from CN region
-  server_url: # <your server url>
+  server_url: https://ya3zoa5m.lc-cn-n1-shared.com # <your server url>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
